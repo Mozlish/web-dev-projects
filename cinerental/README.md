@@ -2,6 +2,8 @@
 
 A movie rental practice project built with **Next.js (App Router)**, **React Context + useReducer** and **Tailwind CSS v4**.
 
+**Live demo:** https://cinerental-mozlish.vercel.app
+
 ## Features
 - Movie grid with posters, genre, star rating and price
 - Sidebar filter: All Movies / Trending / New Releases / Coming Soon

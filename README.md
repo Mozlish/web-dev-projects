@@ -4,9 +4,9 @@ A collection of web applications I've built while learning modern front-end deve
 
 ## Projects
 
-| # | Project | Description | Tech |
-|---|---------|-------------|------|
-| 1 | [CineRental](./cinerental) | Movie rental app with a filterable movie grid, details popup, shopping cart, toast notifications and dark/light mode. | Next.js (App Router), React Context + useReducer, Tailwind CSS v4 |
+| # | Project | Description | Tech | Live Demo |
+|---|---------|-------------|------|-----------|
+| 1 | [CineRental](./cinerental) | Movie rental app with a filterable movie grid, details popup, shopping cart, toast notifications and dark/light mode. | Next.js (App Router), React Context + useReducer, Tailwind CSS v4 | [cinerental-mozlish.vercel.app](https://cinerental-mozlish.vercel.app) |
 
 _More projects coming soon._
 
