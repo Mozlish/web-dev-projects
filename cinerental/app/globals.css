@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* Turn on `dark:` classes whenever <html> has class="dark"
+   (by default Tailwind v4 follows the operating system instead) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Our design tokens — each one becomes a Tailwind class.
+   --color-primary   → bg-primary, text-primary, border-primary ...
+   --color-cine-dark → bg-cine-dark ...                           */
+@theme inline {
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+
+  --color-primary: #00d991;
+  --color-primary-dark: #00b87a;
+  --color-cine-dark: #13141c;
+  --color-cine-card: #1c1d27;
+  --color-cine-light: #f4f5f7;
+
+  --animate-fade-in: fade-in 0.2s ease-out;
+  --animate-pop-in: pop-in 0.25s ease-out;
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes pop-in {
+    from {
+      opacity: 0;
+      transform: translateY(12px) scale(0.97);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+}
