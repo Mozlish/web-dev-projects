@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* Our design tokens. Each --color-* becomes a Tailwind class:
+   --color-card  ->  bg-card, text-card, border-card ... */
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+
+  --color-page: #0c1110;
+  --color-card: #141b19;
+  --color-field: #1d2724;
+  --color-line: #2a3632;
+  --color-brand: #34d399;
+  --color-brand-dark: #10b981;
+}
+
+/* The page is dark, so the browser's own controls (scrollbars, date pickers) match */
+:root {
+  color-scheme: dark;
+}
+
+/* Printing a ticket: white paper, dark ink */
+@media print {
+  :root {
+    color-scheme: light;
+  }
+}
